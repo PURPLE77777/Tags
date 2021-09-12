@@ -1,0 +1,108 @@
+body {
+  margin: 0px;
+  background-color: darkgoldenrod;
+}
+
+body .main-block {
+  border-radius: 10px;
+  margin-top: 100px;
+  padding: 5px;
+  margin: 100px auto 0px auto;
+  border: 2px solid #c9c9c9;
+  background-color: white;
+  max-width: 250px;
+}
+
+body .main-block .container {
+  padding: 10px;
+  background-color: #edeeef;
+}
+
+body .main-block .container .add-tag {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+body .main-block .container .add-tag .check {
+  height: 30px;
+  width: 80px;
+  margin: 0px;
+  margin-right: 5px;
+}
+
+body .main-block .container .add-tag .name-tag {
+  width: 100%;
+}
+
+body .main-block .container .add-tag .btn {
+  margin-left: 10px;
+  width: 100%;
+  background-color: #e64d43;
+  border: 2px solid #be4e46;
+  color: white;
+  font-weight: bold;
+  padding: 5px;
+  cursor: pointer;
+}
+
+body .main-block .container .add-tag .btn:hover {
+  -webkit-box-shadow: 0px 0px 5px 2px red;
+          box-shadow: 0px 0px 5px 2px red;
+  background-color: #e2847e;
+}
+
+body .main-block .container .tags {
+  background-color: white;
+  min-height: 100px;
+  margin-top: 10px;
+  padding: 5px 10px;
+}
+
+body .main-block .container .tags .tags_p {
+  text-align: center;
+  color: #7d7d7d;
+  margin: 5px auto;
+}
+
+body .main-block .container .tags .tag {
+  position: relative;
+  border: 3px solid #b9cc91;
+  color: #627635;
+  padding: 5px;
+  text-align: center;
+  background-color: #cfe4a0;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+body .main-block .container .tags .tag .delete-tag {
+  position: absolute;
+  right: 5px;
+  top: 11px;
+  width: 10px;
+  height: 10px;
+  cursor: pointer;
+}
+
+body .main-block .container .tags .tag .delete-tag::before, body .main-block .container .tags .tag .delete-tag::after {
+  content: "";
+  display: block;
+  height: 2px;
+  background-color: #627635;
+}
+
+body .main-block .container .tags .tag .delete-tag::before {
+  -webkit-transform: translate(0px, 2px) rotate(45deg);
+          transform: translate(0px, 2px) rotate(45deg);
+}
+
+body .main-block .container .tags .tag .delete-tag::after {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
